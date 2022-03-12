@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
 
-.main{
-  height: 100vh;
+
+body{
+  background-image: 
+  linear-gradient(rgba(255, 255, 255, 0.1) .3px, transparent .2px), 
+  linear-gradient(90deg, rgba(255, 255, 255, 0.1) .3px, transparent .2px);
+
+  background-size: 3rem 3rem;
   background-color: #1A1D1E;
 }
+.main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
+}
 .table{
   display: flex;
   flex-direction: column;
@@ -18,7 +29,6 @@
   border: 2px solid #9BA1A6;
   border-radius: 7px;
 }
-
 .table > .table-name{
   justify-content: center;
   background: #4C5155;
@@ -38,7 +48,6 @@
   font-size: 16px;
   line-height: 130%;
 }
-
 .table > .attribute {
   display: flex;
   flex-direction: row;
@@ -48,43 +57,29 @@
   width: 95%;
   height: 40px;
   margin-top: 5px;
-}
-
-.upk{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  width: 99%;
-  height: 40px;
-  margin-top: 5px;
-}
-
-.upk > .attribute{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  background: #2B2F31;
-  border-radius: 3px;
-  width: 95%;
+  margin-bottom: 5px;
 }
 .element{
   width: 30%;
 }
-
 .element > h3{
   font-size: 18px;
   color: #fff;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 130%;
 }
 .type{
   text-align: center;
 }
 
+.null{
+  width: 15%;
+}
 .pk{
+  width: 10%;
   text-align:end;
   justify-content: center;
 }
@@ -100,4 +95,15 @@
     font-weight: 600;
     font-size: 10px;
     line-height: 130%;
+}
+.navbar{
+  background-color: #373a3b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
+.navbar > .brand{
+  background: linear-gradient(to right,rgba(255, 225, 0, 1)  , rgba(21, 241, 202, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

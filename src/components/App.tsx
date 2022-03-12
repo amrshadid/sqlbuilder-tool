@@ -1,17 +1,25 @@
 import * as React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import Main from './main'
 import { Container } from 'react-bootstrap';
+import './App.css';
+import {AppProvider} from '../context'
+import Main from './main'
+import Sidebar from './navbar'
 
-export interface IAppProps {
-}
 
-export default function App (props: IAppProps) {
+export default function App(props: IAppProps) {
   return (
-    <Container fluid>
-        <Main/>
-    </Container>
+    <AppProvider>
+      <Container fluid>
+        <Sidebar/>
+
+        <Container>
+        <Main />
+        </Container>
+
+      </Container>
+    </AppProvider>
+
   );
 }
 

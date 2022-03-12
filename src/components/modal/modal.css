@@ -1,0 +1,34 @@
+.btn-modal{
+  border-radius: 100rem;
+  padding: 1rem;
+  font-family: 'Avenir Next';
+  font-size: 16px;
+  padding: .5rem 3rem;
+  color: white;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(to right,rgba(255, 225, 0, 1)  , rgba(21, 241, 202, 1));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #373a3b inset;
+}
+
+.btn-modal:hover,
+.btn-modal:focus{
+    font-size: 16.5px;
+    box-shadow: 2px 1000px 1px #373a3b inset;
+    color: white;
+    border: solid 3px transparent;
+}
+
+@media (min-width: 576px){
+.modal-dialog{
+    min-width: 90% !important;
+    height: 60vh;
+
+}
+}
+.manual{
+  transition: 200ms;
+  height: 60vh;
+}
