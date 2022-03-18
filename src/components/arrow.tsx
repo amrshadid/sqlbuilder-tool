@@ -12,12 +12,11 @@ export default function Arrow (props: IArrowProps) {
             headSize={3}
             tailSize={3}
             path={'smooth'}
-            zIndex={2}
-            strokeWidth={2}
             showTail={true}
             color={'#9BA1A6'}
             start={props.head} 
             end={props.tail} 
+            strokeWidth={1.5}
     />
   );
 }
