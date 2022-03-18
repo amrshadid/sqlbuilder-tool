@@ -5,12 +5,11 @@ import { useXarrow } from 'react-xarrows';
 
 
 export default function Table(props: ITableProps
-                                    & IpostionProps) {
-    const updateXarrow = useXarrow();
+                                    & ITableOptionsProps) {
 
     return (
-        <Draggable onDrag={updateXarrow} onStop={updateXarrow}>
-            <div className='table' style={{left:props.left,top:props.top}}>
+        <Draggable onDrag={props.onDrag} onStop={props.onStop}>
+            <div className='table' id={props.name} style={{left:props.left,top:props.top}}>
 
                 <div className='table-name'>
                     <h3>{props.name}</h3>
