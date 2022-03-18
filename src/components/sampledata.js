@@ -1,0 +1,36 @@
+export const db = {
+    schema:[
+        {
+        "name":"user",
+        "att":[
+            {"name":"ID","type":"int","null":false,"pk":true},
+            {"name":"Name","type":"vchar(50)","null":false,"pk":false},
+            {"name":"Email","type":"vchar(50)","null":false,"pk":false},
+            {"name":"Password","type":"vchar(50)","null":false,"pk":false}
+        ]
+        },
+        {
+            "name":"todo",
+            "att":[
+                {"name":"ID","type":"int","null":false,"pk":true},
+                {"name":"Name","type":"vchar(50)","null":false,"pk":false},
+                {"name":"Email","type":"vchar(50)","null":false,"pk":false},
+                {"name":"Password","type":"vchar(50)","null":false,"pk":false}
+            ]
+        },
+        {
+            "name":"any",
+            "att":[
+                {"name":"ID","type":"int","null":false,"pk":true},
+                {"name":"Name","type":"vchar(50)","null":false,"pk":false},
+                {"name":"Email","type":"vchar(50)","null":false,"pk":false},
+                {"name":"Password","type":"vchar(50)","null":false,"pk":false}
+            ]
+        },
+    ],
+    rel:[
+        {"head":'user.ID',"tail":"todo.ID"},
+        {"head":'any.ID',"tail":"user.ID"},
+
+    ]
+}
